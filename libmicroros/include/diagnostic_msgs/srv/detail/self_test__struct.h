@@ -2,6 +2,9 @@
 // with input from diagnostic_msgs:srv/SelfTest.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "diagnostic_msgs/srv/self_test.h"
+
+
 #ifndef DIAGNOSTIC_MSGS__SRV__DETAIL__SELF_TEST__STRUCT_H_
 #define DIAGNOSTIC_MSGS__SRV__DETAIL__SELF_TEST__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct diagnostic_msgs__srv__SelfTest_Request__Sequence
   size_t capacity;
 } diagnostic_msgs__srv__SelfTest_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -59,7 +61,6 @@ typedef struct diagnostic_msgs__srv__SelfTest_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } diagnostic_msgs__srv__SelfTest_Response__Sequence;
-
 
 // Constants defined in the message
 

@@ -2,6 +2,9 @@
 // with input from std_srvs:srv/Trigger.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "std_srvs/srv/trigger.h"
+
+
 #ifndef STD_SRVS__SRV__DETAIL__TRIGGER__STRUCT_H_
 #define STD_SRVS__SRV__DETAIL__TRIGGER__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct std_srvs__srv__Trigger_Request__Sequence
   size_t capacity;
 } std_srvs__srv__Trigger_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -58,7 +60,6 @@ typedef struct std_srvs__srv__Trigger_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } std_srvs__srv__Trigger_Response__Sequence;
-
 
 // Constants defined in the message
 

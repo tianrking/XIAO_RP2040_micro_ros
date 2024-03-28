@@ -2,6 +2,9 @@
 // with input from example_interfaces:action/Fibonacci.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "example_interfaces/action/fibonacci.h"
+
+
 #ifndef EXAMPLE_INTERFACES__ACTION__DETAIL__FIBONACCI__STRUCT_H_
 #define EXAMPLE_INTERFACES__ACTION__DETAIL__FIBONACCI__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct example_interfaces__action__Fibonacci_Goal__Sequence
   size_t capacity;
 } example_interfaces__action__Fibonacci_Goal__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -55,7 +57,6 @@ typedef struct example_interfaces__action__Fibonacci_Result__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__action__Fibonacci_Result__Sequence;
-
 
 // Constants defined in the message
 
@@ -79,7 +80,6 @@ typedef struct example_interfaces__action__Fibonacci_Feedback__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__action__Fibonacci_Feedback__Sequence;
-
 
 // Constants defined in the message
 
@@ -106,7 +106,6 @@ typedef struct example_interfaces__action__Fibonacci_SendGoal_Request__Sequence
   size_t capacity;
 } example_interfaces__action__Fibonacci_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -129,7 +128,6 @@ typedef struct example_interfaces__action__Fibonacci_SendGoal_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__action__Fibonacci_SendGoal_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -167,7 +165,6 @@ typedef struct example_interfaces__action__Fibonacci_SendGoal_Event__Sequence
   size_t capacity;
 } example_interfaces__action__Fibonacci_SendGoal_Event__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -190,7 +187,6 @@ typedef struct example_interfaces__action__Fibonacci_GetResult_Request__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__action__Fibonacci_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -215,7 +211,6 @@ typedef struct example_interfaces__action__Fibonacci_GetResult_Response__Sequenc
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__action__Fibonacci_GetResult_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -253,7 +248,6 @@ typedef struct example_interfaces__action__Fibonacci_GetResult_Event__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__action__Fibonacci_GetResult_Event__Sequence;
-
 
 // Constants defined in the message
 
