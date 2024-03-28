@@ -2,6 +2,9 @@
 // with input from nav_msgs:srv/GetPlan.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "nav_msgs/srv/get_plan.h"
+
+
 #ifndef NAV_MSGS__SRV__DETAIL__GET_PLAN__STRUCT_H_
 #define NAV_MSGS__SRV__DETAIL__GET_PLAN__STRUCT_H_
 
@@ -44,7 +47,6 @@ typedef struct nav_msgs__srv__GetPlan_Request__Sequence
   size_t capacity;
 } nav_msgs__srv__GetPlan_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -66,7 +68,6 @@ typedef struct nav_msgs__srv__GetPlan_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } nav_msgs__srv__GetPlan_Response__Sequence;
-
 
 // Constants defined in the message
 

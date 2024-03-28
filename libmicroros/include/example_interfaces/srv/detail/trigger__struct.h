@@ -2,6 +2,9 @@
 // with input from example_interfaces:srv/Trigger.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "example_interfaces/srv/trigger.h"
+
+
 #ifndef EXAMPLE_INTERFACES__SRV__DETAIL__TRIGGER__STRUCT_H_
 #define EXAMPLE_INTERFACES__SRV__DETAIL__TRIGGER__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct example_interfaces__srv__Trigger_Request__Sequence
   size_t capacity;
 } example_interfaces__srv__Trigger_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -58,7 +60,6 @@ typedef struct example_interfaces__srv__Trigger_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__srv__Trigger_Response__Sequence;
-
 
 // Constants defined in the message
 

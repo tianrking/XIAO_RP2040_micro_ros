@@ -2,6 +2,9 @@
 // with input from example_interfaces:srv/AddTwoInts.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "example_interfaces/srv/add_two_ints.h"
+
+
 #ifndef EXAMPLE_INTERFACES__SRV__DETAIL__ADD_TWO_INTS__STRUCT_H_
 #define EXAMPLE_INTERFACES__SRV__DETAIL__ADD_TWO_INTS__STRUCT_H_
 
@@ -34,7 +37,6 @@ typedef struct example_interfaces__srv__AddTwoInts_Request__Sequence
   size_t capacity;
 } example_interfaces__srv__AddTwoInts_Request__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in srv/AddTwoInts in the package example_interfaces.
@@ -52,7 +54,6 @@ typedef struct example_interfaces__srv__AddTwoInts_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } example_interfaces__srv__AddTwoInts_Response__Sequence;
-
 
 // Constants defined in the message
 
