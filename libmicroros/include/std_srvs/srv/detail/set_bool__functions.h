@@ -2,6 +2,9 @@
 // with input from std_srvs:srv/SetBool.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "std_srvs/srv/set_bool.h"
+
+
 #ifndef STD_SRVS__SRV__DETAIL__SET_BOOL__FUNCTIONS_H_
 #define STD_SRVS__SRV__DETAIL__SET_BOOL__FUNCTIONS_H_
 
@@ -13,10 +16,40 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "std_srvs/msg/rosidl_generator_c__visibility_control.h"
 
 #include "std_srvs/srv/detail/set_bool__struct.h"
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_type_hash_t *
+std_srvs__srv__SetBool__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeDescription *
+std_srvs__srv__SetBool__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource *
+std_srvs__srv__SetBool__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+std_srvs__srv__SetBool__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
 
 /// Initialize srv/SetBool message.
 /**
@@ -53,7 +86,7 @@ std_srvs__srv__SetBool_Request__fini(std_srvs__srv__SetBool_Request * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_std_srvs
 std_srvs__srv__SetBool_Request *
-std_srvs__srv__SetBool_Request__create();
+std_srvs__srv__SetBool_Request__create(void);
 
 /// Destroy srv/SetBool message.
 /**
@@ -92,6 +125,30 @@ bool
 std_srvs__srv__SetBool_Request__copy(
   const std_srvs__srv__SetBool_Request * input,
   std_srvs__srv__SetBool_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_type_hash_t *
+std_srvs__srv__SetBool_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeDescription *
+std_srvs__srv__SetBool_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource *
+std_srvs__srv__SetBool_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+std_srvs__srv__SetBool_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetBool messages.
 /**
@@ -205,7 +262,7 @@ std_srvs__srv__SetBool_Response__fini(std_srvs__srv__SetBool_Response * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_std_srvs
 std_srvs__srv__SetBool_Response *
-std_srvs__srv__SetBool_Response__create();
+std_srvs__srv__SetBool_Response__create(void);
 
 /// Destroy srv/SetBool message.
 /**
@@ -244,6 +301,30 @@ bool
 std_srvs__srv__SetBool_Response__copy(
   const std_srvs__srv__SetBool_Response * input,
   std_srvs__srv__SetBool_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_type_hash_t *
+std_srvs__srv__SetBool_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeDescription *
+std_srvs__srv__SetBool_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource *
+std_srvs__srv__SetBool_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+std_srvs__srv__SetBool_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetBool messages.
 /**
@@ -357,7 +438,7 @@ std_srvs__srv__SetBool_Event__fini(std_srvs__srv__SetBool_Event * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_std_srvs
 std_srvs__srv__SetBool_Event *
-std_srvs__srv__SetBool_Event__create();
+std_srvs__srv__SetBool_Event__create(void);
 
 /// Destroy srv/SetBool message.
 /**
@@ -396,6 +477,30 @@ bool
 std_srvs__srv__SetBool_Event__copy(
   const std_srvs__srv__SetBool_Event * input,
   std_srvs__srv__SetBool_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_type_hash_t *
+std_srvs__srv__SetBool_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeDescription *
+std_srvs__srv__SetBool_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource *
+std_srvs__srv__SetBool_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_std_srvs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+std_srvs__srv__SetBool_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetBool messages.
 /**

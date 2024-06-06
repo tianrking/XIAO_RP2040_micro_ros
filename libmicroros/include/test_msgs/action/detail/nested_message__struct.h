@@ -2,6 +2,9 @@
 // with input from test_msgs:action/NestedMessage.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "test_msgs/action/nested_message.h"
+
+
 #ifndef TEST_MSGS__ACTION__DETAIL__NESTED_MESSAGE__STRUCT_H_
 #define TEST_MSGS__ACTION__DETAIL__NESTED_MESSAGE__STRUCT_H_
 
@@ -43,7 +46,6 @@ typedef struct test_msgs__action__NestedMessage_Goal__Sequence
   size_t capacity;
 } test_msgs__action__NestedMessage_Goal__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -74,7 +76,6 @@ typedef struct test_msgs__action__NestedMessage_Result__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__action__NestedMessage_Result__Sequence;
-
 
 // Constants defined in the message
 
@@ -107,7 +108,6 @@ typedef struct test_msgs__action__NestedMessage_Feedback__Sequence
   size_t capacity;
 } test_msgs__action__NestedMessage_Feedback__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -133,7 +133,6 @@ typedef struct test_msgs__action__NestedMessage_SendGoal_Request__Sequence
   size_t capacity;
 } test_msgs__action__NestedMessage_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -157,7 +156,6 @@ typedef struct test_msgs__action__NestedMessage_SendGoal_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__action__NestedMessage_SendGoal_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -195,7 +193,6 @@ typedef struct test_msgs__action__NestedMessage_SendGoal_Event__Sequence
   size_t capacity;
 } test_msgs__action__NestedMessage_SendGoal_Event__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -218,7 +215,6 @@ typedef struct test_msgs__action__NestedMessage_GetResult_Request__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__action__NestedMessage_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -243,7 +239,6 @@ typedef struct test_msgs__action__NestedMessage_GetResult_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__action__NestedMessage_GetResult_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -281,7 +276,6 @@ typedef struct test_msgs__action__NestedMessage_GetResult_Event__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__action__NestedMessage_GetResult_Event__Sequence;
-
 
 // Constants defined in the message
 

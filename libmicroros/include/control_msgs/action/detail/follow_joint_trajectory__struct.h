@@ -2,6 +2,9 @@
 // with input from control_msgs:action/FollowJointTrajectory.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "control_msgs/action/follow_joint_trajectory.h"
+
+
 #ifndef CONTROL_MSGS__ACTION__DETAIL__FOLLOW_JOINT_TRAJECTORY__STRUCT_H_
 #define CONTROL_MSGS__ACTION__DETAIL__FOLLOW_JOINT_TRAJECTORY__STRUCT_H_
 
@@ -72,7 +75,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_Goal__Sequence
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_Goal__Sequence;
 
-
 // Constants defined in the message
 
 /// Constant 'SUCCESSFUL'.
@@ -140,7 +142,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_Result__Sequence
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_Result__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -183,7 +184,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_Feedback__Sequence
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_Feedback__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -209,7 +209,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_SendGoal_Request__Seq
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -232,7 +231,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_SendGoal_Response__Se
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_SendGoal_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -270,7 +268,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_SendGoal_Event__Seque
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_SendGoal_Event__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -293,7 +290,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_GetResult_Request__Se
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -318,7 +314,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_GetResult_Response__S
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_GetResult_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -356,7 +351,6 @@ typedef struct control_msgs__action__FollowJointTrajectory_GetResult_Event__Sequ
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__FollowJointTrajectory_GetResult_Event__Sequence;
-
 
 // Constants defined in the message
 

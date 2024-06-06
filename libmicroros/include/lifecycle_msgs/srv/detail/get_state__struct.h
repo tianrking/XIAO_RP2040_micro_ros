@@ -2,6 +2,9 @@
 // with input from lifecycle_msgs:srv/GetState.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "lifecycle_msgs/srv/get_state.h"
+
+
 #ifndef LIFECYCLE_MSGS__SRV__DETAIL__GET_STATE__STRUCT_H_
 #define LIFECYCLE_MSGS__SRV__DETAIL__GET_STATE__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct lifecycle_msgs__srv__GetState_Request__Sequence
   size_t capacity;
 } lifecycle_msgs__srv__GetState_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -55,7 +57,6 @@ typedef struct lifecycle_msgs__srv__GetState_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } lifecycle_msgs__srv__GetState_Response__Sequence;
-
 
 // Constants defined in the message
 

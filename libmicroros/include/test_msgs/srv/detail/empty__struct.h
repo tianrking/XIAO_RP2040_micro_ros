@@ -2,6 +2,9 @@
 // with input from test_msgs:srv/Empty.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "test_msgs/srv/empty.h"
+
+
 #ifndef TEST_MSGS__SRV__DETAIL__EMPTY__STRUCT_H_
 #define TEST_MSGS__SRV__DETAIL__EMPTY__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct test_msgs__srv__Empty_Request__Sequence
   size_t capacity;
 } test_msgs__srv__Empty_Request__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in srv/Empty in the package test_msgs.
@@ -51,7 +53,6 @@ typedef struct test_msgs__srv__Empty_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__srv__Empty_Response__Sequence;
-
 
 // Constants defined in the message
 

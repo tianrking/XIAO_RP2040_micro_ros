@@ -2,6 +2,9 @@
 // with input from test_msgs:action/NestedMessage.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "test_msgs/action/nested_message.h"
+
+
 #ifndef TEST_MSGS__ACTION__DETAIL__NESTED_MESSAGE__FUNCTIONS_H_
 #define TEST_MSGS__ACTION__DETAIL__NESTED_MESSAGE__FUNCTIONS_H_
 
@@ -13,10 +16,40 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "test_msgs/msg/rosidl_generator_c__visibility_control.h"
 
 #include "test_msgs/action/detail/nested_message__struct.h"
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage__get_type_hash(
+  const rosidl_action_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage__get_type_description(
+  const rosidl_action_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage__get_individual_type_description_source(
+  const rosidl_action_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage__get_type_description_sources(
+  const rosidl_action_type_support_t * type_support);
 
 /// Initialize action/NestedMessage message.
 /**
@@ -53,7 +86,7 @@ test_msgs__action__NestedMessage_Goal__fini(test_msgs__action__NestedMessage_Goa
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_Goal *
-test_msgs__action__NestedMessage_Goal__create();
+test_msgs__action__NestedMessage_Goal__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -92,6 +125,30 @@ bool
 test_msgs__action__NestedMessage_Goal__copy(
   const test_msgs__action__NestedMessage_Goal * input,
   test_msgs__action__NestedMessage_Goal * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_Goal__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_Goal__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_Goal__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_Goal__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -205,7 +262,7 @@ test_msgs__action__NestedMessage_Result__fini(test_msgs__action__NestedMessage_R
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_Result *
-test_msgs__action__NestedMessage_Result__create();
+test_msgs__action__NestedMessage_Result__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -244,6 +301,30 @@ bool
 test_msgs__action__NestedMessage_Result__copy(
   const test_msgs__action__NestedMessage_Result * input,
   test_msgs__action__NestedMessage_Result * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_Result__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_Result__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_Result__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_Result__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -357,7 +438,7 @@ test_msgs__action__NestedMessage_Feedback__fini(test_msgs__action__NestedMessage
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_Feedback *
-test_msgs__action__NestedMessage_Feedback__create();
+test_msgs__action__NestedMessage_Feedback__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -396,6 +477,30 @@ bool
 test_msgs__action__NestedMessage_Feedback__copy(
   const test_msgs__action__NestedMessage_Feedback * input,
   test_msgs__action__NestedMessage_Feedback * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_Feedback__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_Feedback__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_Feedback__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_Feedback__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -474,6 +579,30 @@ test_msgs__action__NestedMessage_Feedback__Sequence__copy(
   const test_msgs__action__NestedMessage_Feedback__Sequence * input,
   test_msgs__action__NestedMessage_Feedback__Sequence * output);
 
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_SendGoal__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_SendGoal__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_SendGoal__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_SendGoal__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
+
 /// Initialize action/NestedMessage message.
 /**
  * If the init function is called twice for the same message without
@@ -509,7 +638,7 @@ test_msgs__action__NestedMessage_SendGoal_Request__fini(test_msgs__action__Neste
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_SendGoal_Request *
-test_msgs__action__NestedMessage_SendGoal_Request__create();
+test_msgs__action__NestedMessage_SendGoal_Request__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -548,6 +677,30 @@ bool
 test_msgs__action__NestedMessage_SendGoal_Request__copy(
   const test_msgs__action__NestedMessage_SendGoal_Request * input,
   test_msgs__action__NestedMessage_SendGoal_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_SendGoal_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_SendGoal_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_SendGoal_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_SendGoal_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -661,7 +814,7 @@ test_msgs__action__NestedMessage_SendGoal_Response__fini(test_msgs__action__Nest
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_SendGoal_Response *
-test_msgs__action__NestedMessage_SendGoal_Response__create();
+test_msgs__action__NestedMessage_SendGoal_Response__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -700,6 +853,30 @@ bool
 test_msgs__action__NestedMessage_SendGoal_Response__copy(
   const test_msgs__action__NestedMessage_SendGoal_Response * input,
   test_msgs__action__NestedMessage_SendGoal_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_SendGoal_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_SendGoal_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_SendGoal_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_SendGoal_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -813,7 +990,7 @@ test_msgs__action__NestedMessage_SendGoal_Event__fini(test_msgs__action__NestedM
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_SendGoal_Event *
-test_msgs__action__NestedMessage_SendGoal_Event__create();
+test_msgs__action__NestedMessage_SendGoal_Event__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -852,6 +1029,30 @@ bool
 test_msgs__action__NestedMessage_SendGoal_Event__copy(
   const test_msgs__action__NestedMessage_SendGoal_Event * input,
   test_msgs__action__NestedMessage_SendGoal_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_SendGoal_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_SendGoal_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_SendGoal_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_SendGoal_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -930,6 +1131,30 @@ test_msgs__action__NestedMessage_SendGoal_Event__Sequence__copy(
   const test_msgs__action__NestedMessage_SendGoal_Event__Sequence * input,
   test_msgs__action__NestedMessage_SendGoal_Event__Sequence * output);
 
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_GetResult__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_GetResult__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_GetResult__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_GetResult__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
+
 /// Initialize action/NestedMessage message.
 /**
  * If the init function is called twice for the same message without
@@ -965,7 +1190,7 @@ test_msgs__action__NestedMessage_GetResult_Request__fini(test_msgs__action__Nest
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_GetResult_Request *
-test_msgs__action__NestedMessage_GetResult_Request__create();
+test_msgs__action__NestedMessage_GetResult_Request__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -1004,6 +1229,30 @@ bool
 test_msgs__action__NestedMessage_GetResult_Request__copy(
   const test_msgs__action__NestedMessage_GetResult_Request * input,
   test_msgs__action__NestedMessage_GetResult_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_GetResult_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_GetResult_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_GetResult_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_GetResult_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -1117,7 +1366,7 @@ test_msgs__action__NestedMessage_GetResult_Response__fini(test_msgs__action__Nes
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_GetResult_Response *
-test_msgs__action__NestedMessage_GetResult_Response__create();
+test_msgs__action__NestedMessage_GetResult_Response__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -1156,6 +1405,30 @@ bool
 test_msgs__action__NestedMessage_GetResult_Response__copy(
   const test_msgs__action__NestedMessage_GetResult_Response * input,
   test_msgs__action__NestedMessage_GetResult_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_GetResult_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_GetResult_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_GetResult_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_GetResult_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -1269,7 +1542,7 @@ test_msgs__action__NestedMessage_GetResult_Event__fini(test_msgs__action__Nested
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_GetResult_Event *
-test_msgs__action__NestedMessage_GetResult_Event__create();
+test_msgs__action__NestedMessage_GetResult_Event__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -1308,6 +1581,30 @@ bool
 test_msgs__action__NestedMessage_GetResult_Event__copy(
   const test_msgs__action__NestedMessage_GetResult_Event * input,
   test_msgs__action__NestedMessage_GetResult_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_GetResult_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_GetResult_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_GetResult_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_GetResult_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**
@@ -1421,7 +1718,7 @@ test_msgs__action__NestedMessage_FeedbackMessage__fini(test_msgs__action__Nested
  */
 ROSIDL_GENERATOR_C_PUBLIC_test_msgs
 test_msgs__action__NestedMessage_FeedbackMessage *
-test_msgs__action__NestedMessage_FeedbackMessage__create();
+test_msgs__action__NestedMessage_FeedbackMessage__create(void);
 
 /// Destroy action/NestedMessage message.
 /**
@@ -1460,6 +1757,30 @@ bool
 test_msgs__action__NestedMessage_FeedbackMessage__copy(
   const test_msgs__action__NestedMessage_FeedbackMessage * input,
   test_msgs__action__NestedMessage_FeedbackMessage * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_type_hash_t *
+test_msgs__action__NestedMessage_FeedbackMessage__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+test_msgs__action__NestedMessage_FeedbackMessage__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+test_msgs__action__NestedMessage_FeedbackMessage__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_test_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+test_msgs__action__NestedMessage_FeedbackMessage__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/NestedMessage messages.
 /**

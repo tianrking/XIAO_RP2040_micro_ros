@@ -163,12 +163,7 @@ typedef struct RMW_PUBLIC_TYPE rmw_subscription_options_s
    * remote nodes, especially to avoid "double delivery" when both intra- and
    * inter- process communication is taking place.
    *
-   * \todo(wjwwood): nail this down when participant mapping is sorted out.
-   *   See: https://github.com/ros2/design/pull/250
-   *
-   * The definition of local is somewhat vague at the moment.
-   * Right now it means local to the node, and that definition works best, but
-   * may become more complicated when/if participants map to a context instead.
+   * The definition of local means that in the same context.
    */
   bool ignore_local_publications;
 
@@ -464,7 +459,7 @@ typedef enum RMW_PUBLIC_TYPE rmw_qos_durability_policy_e
   "RMW_QOS_POLICY_LIVELINESS_MANUAL_BY_NODE is deprecated. " \
   "Use RMW_QOS_POLICY_LIVELINESS_MANUAL_BY_TOPIC if manually asserted liveliness is needed."
 
-#ifndef _WIN32
+#ifndef _MSC_VER
 # define RMW_DECLARE_DEPRECATED(name, msg) name __attribute__((deprecated(msg)))
 #else
 # define RMW_DECLARE_DEPRECATED(name, msg) name __pragma(deprecated(name))
@@ -583,7 +578,7 @@ typedef struct RMW_PUBLIC_TYPE rmw_qos_profile_s
   enum rmw_qos_durability_policy_e durability;
   /// The period at which messages are expected to be sent/received
   /**
-    * RMW_DURATION_UNSPEFICIED will use the RMW implementation's default value,
+    * RMW_DURATION_UNSPECIFIED will use the RMW implementation's default value,
     *   which may or may not be infinite.
     * RMW_DURATION_INFINITE explicitly states that messages never miss a deadline expectation.
     */
@@ -618,13 +613,18 @@ typedef struct RMW_PUBLIC_TYPE rmw_qos_profile_s
   bool avoid_ros_namespace_conventions;
 } rmw_qos_profile_t;
 
-/// ROS graph ID of the topic
+/// Globally unique identifier for a ROS graph entity
+/**
+ * This is expected to be globally unique within a ROS domain.
+ * The identifier should be the same when reported both locally (where the entity was created)
+ * and on remote hosts or processes.
+ */
 typedef struct RMW_PUBLIC_TYPE rmw_gid_s
 {
   /// Name of the rmw implementation
   const char * implementation_identifier;
 
-  /// Byte data Gid value
+  /// Byte data GID value
   uint8_t data[RMW_GID_STORAGE_SIZE];
 } rmw_gid_t;
 

@@ -2,6 +2,9 @@
 // with input from sensor_msgs:srv/SetCameraInfo.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "sensor_msgs/srv/set_camera_info.h"
+
+
 #ifndef SENSOR_MSGS__SRV__DETAIL__SET_CAMERA_INFO__FUNCTIONS_H_
 #define SENSOR_MSGS__SRV__DETAIL__SET_CAMERA_INFO__FUNCTIONS_H_
 
@@ -13,10 +16,40 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "sensor_msgs/msg/rosidl_generator_c__visibility_control.h"
 
 #include "sensor_msgs/srv/detail/set_camera_info__struct.h"
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_type_hash_t *
+sensor_msgs__srv__SetCameraInfo__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+sensor_msgs__srv__SetCameraInfo__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+sensor_msgs__srv__SetCameraInfo__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+sensor_msgs__srv__SetCameraInfo__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
 
 /// Initialize srv/SetCameraInfo message.
 /**
@@ -53,7 +86,7 @@ sensor_msgs__srv__SetCameraInfo_Request__fini(sensor_msgs__srv__SetCameraInfo_Re
  */
 ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
 sensor_msgs__srv__SetCameraInfo_Request *
-sensor_msgs__srv__SetCameraInfo_Request__create();
+sensor_msgs__srv__SetCameraInfo_Request__create(void);
 
 /// Destroy srv/SetCameraInfo message.
 /**
@@ -92,6 +125,30 @@ bool
 sensor_msgs__srv__SetCameraInfo_Request__copy(
   const sensor_msgs__srv__SetCameraInfo_Request * input,
   sensor_msgs__srv__SetCameraInfo_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_type_hash_t *
+sensor_msgs__srv__SetCameraInfo_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+sensor_msgs__srv__SetCameraInfo_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+sensor_msgs__srv__SetCameraInfo_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+sensor_msgs__srv__SetCameraInfo_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetCameraInfo messages.
 /**
@@ -205,7 +262,7 @@ sensor_msgs__srv__SetCameraInfo_Response__fini(sensor_msgs__srv__SetCameraInfo_R
  */
 ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
 sensor_msgs__srv__SetCameraInfo_Response *
-sensor_msgs__srv__SetCameraInfo_Response__create();
+sensor_msgs__srv__SetCameraInfo_Response__create(void);
 
 /// Destroy srv/SetCameraInfo message.
 /**
@@ -244,6 +301,30 @@ bool
 sensor_msgs__srv__SetCameraInfo_Response__copy(
   const sensor_msgs__srv__SetCameraInfo_Response * input,
   sensor_msgs__srv__SetCameraInfo_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_type_hash_t *
+sensor_msgs__srv__SetCameraInfo_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+sensor_msgs__srv__SetCameraInfo_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+sensor_msgs__srv__SetCameraInfo_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+sensor_msgs__srv__SetCameraInfo_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetCameraInfo messages.
 /**
@@ -357,7 +438,7 @@ sensor_msgs__srv__SetCameraInfo_Event__fini(sensor_msgs__srv__SetCameraInfo_Even
  */
 ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
 sensor_msgs__srv__SetCameraInfo_Event *
-sensor_msgs__srv__SetCameraInfo_Event__create();
+sensor_msgs__srv__SetCameraInfo_Event__create(void);
 
 /// Destroy srv/SetCameraInfo message.
 /**
@@ -396,6 +477,30 @@ bool
 sensor_msgs__srv__SetCameraInfo_Event__copy(
   const sensor_msgs__srv__SetCameraInfo_Event * input,
   sensor_msgs__srv__SetCameraInfo_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_type_hash_t *
+sensor_msgs__srv__SetCameraInfo_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+sensor_msgs__srv__SetCameraInfo_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+sensor_msgs__srv__SetCameraInfo_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_sensor_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+sensor_msgs__srv__SetCameraInfo_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetCameraInfo messages.
 /**

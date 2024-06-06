@@ -215,12 +215,12 @@ rcutils_logging_severity_level_from_string(
  * \param[in] args The variable argument list
  */
 typedef void (* rcutils_logging_output_handler_t)(
-  const rcutils_log_location_t *,  // location
-  int,  // severity
-  const char *,  // name
-  rcutils_time_point_value_t,  // timestamp
-  const char *,  // format
-  va_list *  // args
+  const rcutils_log_location_t * location,
+  int severity,
+  const char * name,
+  rcutils_time_point_value_t timestamp,
+  const char * format,
+  va_list * args
 );
 
 /// Get the current output handler.
@@ -237,7 +237,7 @@ typedef void (* rcutils_logging_output_handler_t)(
  */
 RCUTILS_PUBLIC
 RCUTILS_WARN_UNUSED
-rcutils_logging_output_handler_t rcutils_logging_get_output_handler();
+rcutils_logging_output_handler_t rcutils_logging_get_output_handler(void);
 
 /// Set the current output handler.
 /**
@@ -297,7 +297,7 @@ rcutils_ret_t rcutils_logging_format_message(
  */
 RCUTILS_PUBLIC
 RCUTILS_WARN_UNUSED
-int rcutils_logging_get_default_logger_level();
+int rcutils_logging_get_default_logger_level(void);
 
 /// Set the default severity level for loggers.
 /**
@@ -558,9 +558,18 @@ void rcutils_logging_console_output_handler(
  * All logging macros ensure that this has been called once.
  */
 #define RCUTILS_LOGGING_AUTOINIT \
+  RCUTILS_LOGGING_AUTOINIT_WITH_ALLOCATOR(rcutils_get_default_allocator())
+
+/**
+ * \def RCUTILS_LOGGING_AUTOINIT_WITH_ALLOCATOR
+ * \brief Initialize the rcl logging library with allocator.
+ * Usually it is unnecessary to call the macro directly.
+ * All logging macros ensure that this has been called once.
+ */
+#define RCUTILS_LOGGING_AUTOINIT_WITH_ALLOCATOR(alloc) \
   do { \
     if (RCUTILS_UNLIKELY(!g_rcutils_logging_initialized)) { \
-      if (rcutils_logging_initialize() != RCUTILS_RET_OK) { \
+      if (rcutils_logging_initialize_with_allocator(alloc) != RCUTILS_RET_OK) { \
         RCUTILS_SAFE_FWRITE_TO_STDERR( \
           "[rcutils|" __FILE__ ":" RCUTILS_STRINGIFY(__LINE__) \
           "] error initializing logging: "); \

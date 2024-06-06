@@ -2,6 +2,9 @@
 // with input from test_msgs:srv/BasicTypes.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "test_msgs/srv/basic_types.h"
+
+
 #ifndef TEST_MSGS__SRV__DETAIL__BASIC_TYPES__STRUCT_H_
 #define TEST_MSGS__SRV__DETAIL__BASIC_TYPES__STRUCT_H_
 
@@ -50,7 +53,6 @@ typedef struct test_msgs__srv__BasicTypes_Request__Sequence
   size_t capacity;
 } test_msgs__srv__BasicTypes_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -86,7 +88,6 @@ typedef struct test_msgs__srv__BasicTypes_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__srv__BasicTypes_Response__Sequence;
-
 
 // Constants defined in the message
 

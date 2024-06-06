@@ -2,6 +2,9 @@
 // with input from action_msgs:srv/CancelGoal.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "action_msgs/srv/cancel_goal.h"
+
+
 #ifndef ACTION_MSGS__SRV__DETAIL__CANCEL_GOAL__FUNCTIONS_H_
 #define ACTION_MSGS__SRV__DETAIL__CANCEL_GOAL__FUNCTIONS_H_
 
@@ -13,10 +16,40 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "action_msgs/msg/rosidl_generator_c__visibility_control.h"
 
 #include "action_msgs/srv/detail/cancel_goal__struct.h"
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_type_hash_t *
+action_msgs__srv__CancelGoal__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+action_msgs__srv__CancelGoal__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+action_msgs__srv__CancelGoal__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+action_msgs__srv__CancelGoal__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
 
 /// Initialize srv/CancelGoal message.
 /**
@@ -53,7 +86,7 @@ action_msgs__srv__CancelGoal_Request__fini(action_msgs__srv__CancelGoal_Request 
  */
 ROSIDL_GENERATOR_C_PUBLIC_action_msgs
 action_msgs__srv__CancelGoal_Request *
-action_msgs__srv__CancelGoal_Request__create();
+action_msgs__srv__CancelGoal_Request__create(void);
 
 /// Destroy srv/CancelGoal message.
 /**
@@ -92,6 +125,30 @@ bool
 action_msgs__srv__CancelGoal_Request__copy(
   const action_msgs__srv__CancelGoal_Request * input,
   action_msgs__srv__CancelGoal_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_type_hash_t *
+action_msgs__srv__CancelGoal_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+action_msgs__srv__CancelGoal_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+action_msgs__srv__CancelGoal_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+action_msgs__srv__CancelGoal_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/CancelGoal messages.
 /**
@@ -205,7 +262,7 @@ action_msgs__srv__CancelGoal_Response__fini(action_msgs__srv__CancelGoal_Respons
  */
 ROSIDL_GENERATOR_C_PUBLIC_action_msgs
 action_msgs__srv__CancelGoal_Response *
-action_msgs__srv__CancelGoal_Response__create();
+action_msgs__srv__CancelGoal_Response__create(void);
 
 /// Destroy srv/CancelGoal message.
 /**
@@ -244,6 +301,30 @@ bool
 action_msgs__srv__CancelGoal_Response__copy(
   const action_msgs__srv__CancelGoal_Response * input,
   action_msgs__srv__CancelGoal_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_type_hash_t *
+action_msgs__srv__CancelGoal_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+action_msgs__srv__CancelGoal_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+action_msgs__srv__CancelGoal_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+action_msgs__srv__CancelGoal_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/CancelGoal messages.
 /**
@@ -357,7 +438,7 @@ action_msgs__srv__CancelGoal_Event__fini(action_msgs__srv__CancelGoal_Event * ms
  */
 ROSIDL_GENERATOR_C_PUBLIC_action_msgs
 action_msgs__srv__CancelGoal_Event *
-action_msgs__srv__CancelGoal_Event__create();
+action_msgs__srv__CancelGoal_Event__create(void);
 
 /// Destroy srv/CancelGoal message.
 /**
@@ -396,6 +477,30 @@ bool
 action_msgs__srv__CancelGoal_Event__copy(
   const action_msgs__srv__CancelGoal_Event * input,
   action_msgs__srv__CancelGoal_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_type_hash_t *
+action_msgs__srv__CancelGoal_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeDescription *
+action_msgs__srv__CancelGoal_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource *
+action_msgs__srv__CancelGoal_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_action_msgs
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+action_msgs__srv__CancelGoal_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/CancelGoal messages.
 /**

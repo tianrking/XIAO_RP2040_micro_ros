@@ -19,10 +19,19 @@
 #ifndef RCUTILS__LOGGING_MACROS_H_
 #define RCUTILS__LOGGING_MACROS_H_
 
+// *INDENT-OFF*
+
 #include "rcutils/logging.h"
 
 #include <stdio.h>
 #include <stdlib.h>
+
+// This is to avoid compilation warnings in C++ with '-Wold-style-cast'.
+#ifdef __cplusplus
+  #define RCUTILS_CAST_DURATION(x) (static_cast < rcutils_duration_value_t > (x))
+#else
+  #define RCUTILS_CAST_DURATION(x) ((rcutils_duration_value_t)x)
+#endif
 
 #ifdef __cplusplus
 extern "C"
@@ -101,7 +110,7 @@ extern "C"
  * A macro finalizing the `once` condition.
  */
 #define RCUTILS_LOG_CONDITION_ONCE_AFTER } \
-}
+  }
 ///@}
 
 /** @name Macros for the `expression` condition which ignores the log calls
@@ -129,7 +138,7 @@ extern "C"
 /**
  * \return true to log the message, false to ignore the message
  */
-typedef bool (* RclLogFilter)();
+typedef bool (* RclLogFilter)(void);
 /**
  * \def RCUTILS_LOG_CONDITION_FUNCTION_BEFORE
  * A macro checking the `function` condition.
@@ -162,7 +171,7 @@ typedef bool (* RclLogFilter)();
  * A macro finalizing the `skipfirst` condition.
  */
 #define RCUTILS_LOG_CONDITION_SKIPFIRST_AFTER } \
-}
+  }
 ///@}
 
 /** @name Macros for the `throttle` condition which ignores log calls if the
@@ -174,28 +183,28 @@ typedef bool (* RclLogFilter)();
  * A macro initializing and checking the `throttle` condition.
  */
 #define RCUTILS_LOG_CONDITION_THROTTLE_BEFORE(get_time_point_value, duration) { \
-    static rcutils_duration_value_t __rcutils_logging_duration = RCUTILS_MS_TO_NS((rcutils_duration_value_t)duration); \
-    static rcutils_time_point_value_t __rcutils_logging_last_logged = 0; \
-    rcutils_time_point_value_t __rcutils_logging_now = 0; \
-    bool __rcutils_logging_condition = true; \
-    if (get_time_point_value(&__rcutils_logging_now) != RCUTILS_RET_OK) { \
-      rcutils_log( \
-        &__rcutils_logging_location, RCUTILS_LOG_SEVERITY_ERROR, "", \
-        "%s() at %s:%d getting current steady time failed\n", \
-        __func__, __FILE__, __LINE__); \
-    } else { \
-      __rcutils_logging_condition = __rcutils_logging_now >= __rcutils_logging_last_logged + __rcutils_logging_duration; \
-    } \
+  static rcutils_duration_value_t __rcutils_logging_duration = RCUTILS_MS_TO_NS(RCUTILS_CAST_DURATION(duration)); \
+  static rcutils_time_point_value_t __rcutils_logging_last_logged = 0; \
+  rcutils_time_point_value_t __rcutils_logging_now = 0; \
+  bool __rcutils_logging_condition = true; \
+  if (get_time_point_value(&__rcutils_logging_now) != RCUTILS_RET_OK) { \
+  rcutils_log( \
+      &__rcutils_logging_location, RCUTILS_LOG_SEVERITY_ERROR, "", \
+      "%s() at %s:%d getting current steady time failed\n", \
+      __func__, __FILE__, __LINE__); \
+  } else { \
+  __rcutils_logging_condition = __rcutils_logging_now >= __rcutils_logging_last_logged + __rcutils_logging_duration; \
+  } \
  \
-    if (RCUTILS_LIKELY(__rcutils_logging_condition)) { \
-      __rcutils_logging_last_logged = __rcutils_logging_now;
+  if (RCUTILS_LIKELY(__rcutils_logging_condition)) { \
+  __rcutils_logging_last_logged = __rcutils_logging_now;
 
 /**
  * \def RCUTILS_LOG_CONDITION_THROTTLE_AFTER
  * A macro finalizing the `throttle` condition.
  */
 #define RCUTILS_LOG_CONDITION_THROTTLE_AFTER } \
-}
+  }
 ///@}
 
 /** @name Logging macros for severity DEBUG.
@@ -445,6 +454,8 @@ typedef bool (* RclLogFilter)();
 #endif
 ///@}
 
+// *INDENT-ON*
+
 /** @name Logging macros for severity INFO.
  */
 ///@{
@@ -691,6 +702,8 @@ typedef bool (* RclLogFilter)();
     __VA_ARGS__)
 #endif
 ///@}
+
+// *INDENT-ON*
 
 /** @name Logging macros for severity WARN.
  */
@@ -939,6 +952,8 @@ typedef bool (* RclLogFilter)();
 #endif
 ///@}
 
+// *INDENT-ON*
+
 /** @name Logging macros for severity ERROR.
  */
 ///@{
@@ -1186,6 +1201,8 @@ typedef bool (* RclLogFilter)();
 #endif
 ///@}
 
+// *INDENT-ON*
+
 /** @name Logging macros for severity FATAL.
  */
 ///@{
@@ -1432,6 +1449,8 @@ typedef bool (* RclLogFilter)();
     __VA_ARGS__)
 #endif
 ///@}
+
+// *INDENT-ON*
 
 #ifdef __cplusplus
 }
