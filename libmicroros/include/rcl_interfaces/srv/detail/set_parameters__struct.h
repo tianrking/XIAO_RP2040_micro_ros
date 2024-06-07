@@ -2,6 +2,9 @@
 // with input from rcl_interfaces:srv/SetParameters.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "rcl_interfaces/srv/set_parameters.h"
+
+
 #ifndef RCL_INTERFACES__SRV__DETAIL__SET_PARAMETERS__STRUCT_H_
 #define RCL_INTERFACES__SRV__DETAIL__SET_PARAMETERS__STRUCT_H_
 
@@ -37,7 +40,6 @@ typedef struct rcl_interfaces__srv__SetParameters_Request__Sequence
   size_t capacity;
 } rcl_interfaces__srv__SetParameters_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -59,7 +61,6 @@ typedef struct rcl_interfaces__srv__SetParameters_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } rcl_interfaces__srv__SetParameters_Response__Sequence;
-
 
 // Constants defined in the message
 

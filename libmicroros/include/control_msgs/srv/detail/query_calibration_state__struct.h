@@ -2,6 +2,9 @@
 // with input from control_msgs:srv/QueryCalibrationState.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "control_msgs/srv/query_calibration_state.h"
+
+
 #ifndef CONTROL_MSGS__SRV__DETAIL__QUERY_CALIBRATION_STATE__STRUCT_H_
 #define CONTROL_MSGS__SRV__DETAIL__QUERY_CALIBRATION_STATE__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct control_msgs__srv__QueryCalibrationState_Request__Sequence
   size_t capacity;
 } control_msgs__srv__QueryCalibrationState_Request__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in srv/QueryCalibrationState in the package control_msgs.
@@ -51,7 +53,6 @@ typedef struct control_msgs__srv__QueryCalibrationState_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__srv__QueryCalibrationState_Response__Sequence;
-
 
 // Constants defined in the message
 

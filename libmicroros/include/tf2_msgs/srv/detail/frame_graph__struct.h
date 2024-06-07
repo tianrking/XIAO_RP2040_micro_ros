@@ -2,6 +2,9 @@
 // with input from tf2_msgs:srv/FrameGraph.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tf2_msgs/srv/frame_graph.h"
+
+
 #ifndef TF2_MSGS__SRV__DETAIL__FRAME_GRAPH__STRUCT_H_
 #define TF2_MSGS__SRV__DETAIL__FRAME_GRAPH__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct tf2_msgs__srv__FrameGraph_Request__Sequence
   size_t capacity;
 } tf2_msgs__srv__FrameGraph_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -55,7 +57,6 @@ typedef struct tf2_msgs__srv__FrameGraph_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } tf2_msgs__srv__FrameGraph_Response__Sequence;
-
 
 // Constants defined in the message
 

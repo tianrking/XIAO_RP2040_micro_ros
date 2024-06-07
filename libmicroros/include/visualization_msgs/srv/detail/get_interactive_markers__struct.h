@@ -2,6 +2,9 @@
 // with input from visualization_msgs:srv/GetInteractiveMarkers.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "visualization_msgs/srv/get_interactive_markers.h"
+
+
 #ifndef VISUALIZATION_MSGS__SRV__DETAIL__GET_INTERACTIVE_MARKERS__STRUCT_H_
 #define VISUALIZATION_MSGS__SRV__DETAIL__GET_INTERACTIVE_MARKERS__STRUCT_H_
 
@@ -33,7 +36,6 @@ typedef struct visualization_msgs__srv__GetInteractiveMarkers_Request__Sequence
   size_t capacity;
 } visualization_msgs__srv__GetInteractiveMarkers_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -57,7 +59,6 @@ typedef struct visualization_msgs__srv__GetInteractiveMarkers_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } visualization_msgs__srv__GetInteractiveMarkers_Response__Sequence;
-
 
 // Constants defined in the message
 

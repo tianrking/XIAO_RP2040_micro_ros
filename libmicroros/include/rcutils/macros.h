@@ -24,11 +24,11 @@ extern "C"
 
 #include "rcutils/configuration_flags.h"
 
-#ifndef _WIN32
+#ifndef _MSC_VER
 /// A macro to make the compiler warn when the return value of a function is not used.
 #define RCUTILS_WARN_UNUSED __attribute__((warn_unused_result))
 #else
-/// A macro to make the compiler warn when the return value of a function is not used.
+/// A macro to make the compiler (MSVC) warn when the return value of a function is not used.
 #define RCUTILS_WARN_UNUSED _Check_return_
 #endif
 
@@ -68,6 +68,8 @@ extern "C"
   #define RCUTILS_THREAD_LOCAL _Thread_local
 #endif
 
+// Helper macros for nested macro expansion
+#define RCUTILS_EXPAND(x) x
 #define RCUTILS_STRINGIFY_IMPL(x) #x
 #define RCUTILS_STRINGIFY(x) RCUTILS_STRINGIFY_IMPL(x)
 

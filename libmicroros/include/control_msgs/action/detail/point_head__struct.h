@@ -2,6 +2,9 @@
 // with input from control_msgs:action/PointHead.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "control_msgs/action/point_head.h"
+
+
 #ifndef CONTROL_MSGS__ACTION__DETAIL__POINT_HEAD__STRUCT_H_
 #define CONTROL_MSGS__ACTION__DETAIL__POINT_HEAD__STRUCT_H_
 
@@ -47,7 +50,6 @@ typedef struct control_msgs__action__PointHead_Goal__Sequence
   size_t capacity;
 } control_msgs__action__PointHead_Goal__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in action/PointHead in the package control_msgs.
@@ -66,7 +68,6 @@ typedef struct control_msgs__action__PointHead_Result__Sequence
   size_t capacity;
 } control_msgs__action__PointHead_Result__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in action/PointHead in the package control_msgs.
@@ -84,7 +85,6 @@ typedef struct control_msgs__action__PointHead_Feedback__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__PointHead_Feedback__Sequence;
-
 
 // Constants defined in the message
 
@@ -111,7 +111,6 @@ typedef struct control_msgs__action__PointHead_SendGoal_Request__Sequence
   size_t capacity;
 } control_msgs__action__PointHead_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -134,7 +133,6 @@ typedef struct control_msgs__action__PointHead_SendGoal_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__PointHead_SendGoal_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -172,7 +170,6 @@ typedef struct control_msgs__action__PointHead_SendGoal_Event__Sequence
   size_t capacity;
 } control_msgs__action__PointHead_SendGoal_Event__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -195,7 +192,6 @@ typedef struct control_msgs__action__PointHead_GetResult_Request__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__PointHead_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -220,7 +216,6 @@ typedef struct control_msgs__action__PointHead_GetResult_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__PointHead_GetResult_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -258,7 +253,6 @@ typedef struct control_msgs__action__PointHead_GetResult_Event__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__PointHead_GetResult_Event__Sequence;
-
 
 // Constants defined in the message
 

@@ -2,6 +2,9 @@
 // with input from tf2_msgs:action/LookupTransform.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tf2_msgs/action/lookup_transform.h"
+
+
 #ifndef TF2_MSGS__ACTION__DETAIL__LOOKUP_TRANSFORM__STRUCT_H_
 #define TF2_MSGS__ACTION__DETAIL__LOOKUP_TRANSFORM__STRUCT_H_
 
@@ -52,7 +55,6 @@ typedef struct tf2_msgs__action__LookupTransform_Goal__Sequence
   size_t capacity;
 } tf2_msgs__action__LookupTransform_Goal__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -78,7 +80,6 @@ typedef struct tf2_msgs__action__LookupTransform_Result__Sequence
   size_t capacity;
 } tf2_msgs__action__LookupTransform_Result__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in action/LookupTransform in the package tf2_msgs.
@@ -96,7 +97,6 @@ typedef struct tf2_msgs__action__LookupTransform_Feedback__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } tf2_msgs__action__LookupTransform_Feedback__Sequence;
-
 
 // Constants defined in the message
 
@@ -123,7 +123,6 @@ typedef struct tf2_msgs__action__LookupTransform_SendGoal_Request__Sequence
   size_t capacity;
 } tf2_msgs__action__LookupTransform_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -147,7 +146,6 @@ typedef struct tf2_msgs__action__LookupTransform_SendGoal_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } tf2_msgs__action__LookupTransform_SendGoal_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -185,7 +183,6 @@ typedef struct tf2_msgs__action__LookupTransform_SendGoal_Event__Sequence
   size_t capacity;
 } tf2_msgs__action__LookupTransform_SendGoal_Event__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -208,7 +205,6 @@ typedef struct tf2_msgs__action__LookupTransform_GetResult_Request__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } tf2_msgs__action__LookupTransform_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -233,7 +229,6 @@ typedef struct tf2_msgs__action__LookupTransform_GetResult_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } tf2_msgs__action__LookupTransform_GetResult_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -271,7 +266,6 @@ typedef struct tf2_msgs__action__LookupTransform_GetResult_Event__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } tf2_msgs__action__LookupTransform_GetResult_Event__Sequence;
-
 
 // Constants defined in the message
 

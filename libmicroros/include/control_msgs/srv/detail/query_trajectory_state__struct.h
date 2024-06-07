@@ -2,6 +2,9 @@
 // with input from control_msgs:srv/QueryTrajectoryState.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "control_msgs/srv/query_trajectory_state.h"
+
+
 #ifndef CONTROL_MSGS__SRV__DETAIL__QUERY_TRAJECTORY_STATE__STRUCT_H_
 #define CONTROL_MSGS__SRV__DETAIL__QUERY_TRAJECTORY_STATE__STRUCT_H_
 
@@ -37,7 +40,6 @@ typedef struct control_msgs__srv__QueryTrajectoryState_Request__Sequence
   size_t capacity;
 } control_msgs__srv__QueryTrajectoryState_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -71,7 +73,6 @@ typedef struct control_msgs__srv__QueryTrajectoryState_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__srv__QueryTrajectoryState_Response__Sequence;
-
 
 // Constants defined in the message
 

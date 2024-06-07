@@ -2,6 +2,9 @@
 // with input from test_msgs:srv/Arrays.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "test_msgs/srv/arrays.h"
+
+
 #ifndef TEST_MSGS__SRV__DETAIL__ARRAYS__STRUCT_H_
 #define TEST_MSGS__SRV__DETAIL__ARRAYS__STRUCT_H_
 
@@ -74,7 +77,6 @@ typedef struct test_msgs__srv__Arrays_Request__Sequence
   size_t capacity;
 } test_msgs__srv__Arrays_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -137,7 +139,6 @@ typedef struct test_msgs__srv__Arrays_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } test_msgs__srv__Arrays_Response__Sequence;
-
 
 // Constants defined in the message
 

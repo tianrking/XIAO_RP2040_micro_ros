@@ -2,6 +2,9 @@
 // with input from control_msgs:action/SingleJointPosition.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "control_msgs/action/single_joint_position.h"
+
+
 #ifndef CONTROL_MSGS__ACTION__DETAIL__SINGLE_JOINT_POSITION__STRUCT_H_
 #define CONTROL_MSGS__ACTION__DETAIL__SINGLE_JOINT_POSITION__STRUCT_H_
 
@@ -39,7 +42,6 @@ typedef struct control_msgs__action__SingleJointPosition_Goal__Sequence
   size_t capacity;
 } control_msgs__action__SingleJointPosition_Goal__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in action/SingleJointPosition in the package control_msgs.
@@ -57,7 +59,6 @@ typedef struct control_msgs__action__SingleJointPosition_Result__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__SingleJointPosition_Result__Sequence;
-
 
 // Constants defined in the message
 
@@ -84,7 +85,6 @@ typedef struct control_msgs__action__SingleJointPosition_Feedback__Sequence
   size_t capacity;
 } control_msgs__action__SingleJointPosition_Feedback__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -110,7 +110,6 @@ typedef struct control_msgs__action__SingleJointPosition_SendGoal_Request__Seque
   size_t capacity;
 } control_msgs__action__SingleJointPosition_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -133,7 +132,6 @@ typedef struct control_msgs__action__SingleJointPosition_SendGoal_Response__Sequ
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__SingleJointPosition_SendGoal_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -171,7 +169,6 @@ typedef struct control_msgs__action__SingleJointPosition_SendGoal_Event__Sequenc
   size_t capacity;
 } control_msgs__action__SingleJointPosition_SendGoal_Event__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -194,7 +191,6 @@ typedef struct control_msgs__action__SingleJointPosition_GetResult_Request__Sequ
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__SingleJointPosition_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -219,7 +215,6 @@ typedef struct control_msgs__action__SingleJointPosition_GetResult_Response__Seq
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__SingleJointPosition_GetResult_Response__Sequence;
-
 
 // Constants defined in the message
 
@@ -257,7 +252,6 @@ typedef struct control_msgs__action__SingleJointPosition_GetResult_Event__Sequen
   /// The number of allocated items in data
   size_t capacity;
 } control_msgs__action__SingleJointPosition_GetResult_Event__Sequence;
-
 
 // Constants defined in the message
 
