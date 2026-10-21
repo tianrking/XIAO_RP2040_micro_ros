@@ -5,8 +5,6 @@ on:
     inputs:
       name:
         description: "Manual trigger"
-  schedule:
-    - cron:  '0 4 * * *'
   pull_request:
     branches: 
       - '**'
